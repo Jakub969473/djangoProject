@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n@(rifny7x_*_eytgf1z7w4ugcar!y2u=mtp9!$xv3x-1u@he+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['polls-szczot.azurewebsites.net']
+ALLOWED_HOSTS = ['polls-szczot.azurewebsites.net', '127.0.0.1']
 
 # Application definition
 
@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ORIGIN_WHITELIST = [
+    'https://polls-szczot.azurewebsites.net',
+]
+
