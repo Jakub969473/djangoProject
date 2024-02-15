@@ -125,5 +125,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'https://polls-szczot.azurewebsites.net',
+    'https://*.azurewebsites.net'
 ]
 
