@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['polls-szczot.azurewebsites.net', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'piotrus',
     "polls.apps.PollsConfig",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -118,6 +119,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Add any additional directories here
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -128,5 +133,5 @@ CORS_ORIGIN_WHITELIST = [
     'https://*.azurewebsites.net'
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
+#CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 
