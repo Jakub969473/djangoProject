@@ -63,5 +63,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'polls-szczot'
+          app-name: 'duchowa-podroz'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
