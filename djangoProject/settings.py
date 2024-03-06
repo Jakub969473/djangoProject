@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n@(rifny7x_*_eytgf1z7w4ugcar!y2u=mtp9!$xv3x-1u@he+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['polls-szczot.azurewebsites.net', '127.0.0.1']
+ALLOWED_HOSTS = ['duchowa-podroz.azurewebsites.net', '127.0.0.1']
 
 # Application definition
 
@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
-    'https://polls-szczot.azurewebsites.net',
+    'https://duchowa-podroz.azurewebsites.net',
     'https://*.azurewebsites.net'
 ]
 
