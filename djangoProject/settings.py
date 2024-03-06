@@ -133,5 +133,5 @@ CORS_ORIGIN_WHITELIST = [
     'https://*.azurewebsites.net'
 ]
 
-#CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 
